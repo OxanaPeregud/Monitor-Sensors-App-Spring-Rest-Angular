@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Monitor Sensors</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/post_sensor.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<ul class="nav nav-pills">
+			<li class="nav-item">
+				<a class="nav-link" href="/">Add New</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/sensors.html">All Sensors</a>
+			</li>
+		</ul>
+		<div class="row">
+			<div class="col-sm-7" style="background-color:#e6fffa; padding:10px; border-radius:3px">
+				<h3>Add new Sensor</h3>
+				<form id="add_new_sensor">
+					<div class="form-group">
+						<label class="control-label" for="name">Name:</label>
+						<input type="text" class="form-control" id="name"
+							   placeholder="Enter Name" name="name" required/>
+                    </div>
+					<div class="form-group">
+						<label class="control-label" for="model">Model:</label>
+						<input type="text" class="form-control" id="model"
+							   placeholder="Enter Model" name="model" required/>
+					</div>                    
+					<div class="form-group">
+						<label class="control-label" for="type">Type:</label>
+						<input type="text" class="form-control" id="type"
+							   placeholder="Enter Type" name="type" required/>
+					</div>                    
+					<div class="form-group">
+						<label class="control-label" for="rangeFrom">Range From:</label>
+						<input type="number" class="form-control" id="rangeFrom"
+							   placeholder="Enter Range From" name="rangeFrom" required/>
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="rangeTo">Range To:</label>
+						<input type="number" class="form-control" id="rangeTo"
+							   placeholder="Enter Range To" name="rangeTo" required/>
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="unit">Unit:</label>
+						<input type="text" class="form-control" id="unit"
+							   placeholder="Enter Unit" name="unit" required/>
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="location">Location:</label>
+						<input type="text" class="form-control" id="location"
+							   placeholder="Enter Location" name="location" required/>
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="description">Description:</label>
+						<input type="text" class="form-control" id="description"
+							   placeholder="Enter Description" name="description" required/>
+					</div>
+
+					<button type="submit" class="btn btn-danger" id="btn-add-new-sensor">Update</button>
+				</form>
+				<div id="response" style="display:none; margin-top:10px">
+				</div>
+			</div>
+		</div>
+		<hr>		
+	</div>
+</body>
+</html>
